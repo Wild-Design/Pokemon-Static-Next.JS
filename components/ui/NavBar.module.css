@@ -1,9 +1,37 @@
 .navBarContainer {
   display: flex;
   height: 120px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   color: #fff;
   background-color: rgb(29, 29, 29);
+}
+
+.nameImgContainer {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  align-items: center;
+  column-gap: 20px;
+  cursor: pointer;
+}
+.nameImgContainer h2 {
+  font-size: 30px;
+}
+
+.navBarContainer a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+.navBarContainer a:hover {
+  color: #327fd8;
+}
+
+@media screen and (max-width: 470px) {
+  .navBarContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }

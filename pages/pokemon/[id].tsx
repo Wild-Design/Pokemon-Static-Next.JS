@@ -11,7 +11,7 @@ interface Props {
 
 const PokePage: NextPage<Props> = ({ pokemon }) => {
   return (
-    <Layout title={pokemon.name}>
+    <Layout title={pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}>
       <div className={styles.container}>
         <div className={styles.cardsContainer}>
           <div className={styles.pokemonContainer}>
@@ -26,7 +26,7 @@ const PokePage: NextPage<Props> = ({ pokemon }) => {
               <button>Guardar en favoritos</button>
             </div>
             <div className={styles.spritesContainer}>
-              <p>Sprites</p>
+              <p>Sprites:</p>
               <div>
                 <img src={pokemon.sprites.front_default} alt='Front' />
                 <img src={pokemon.sprites.front_shiny} alt='Front Shiny' />
@@ -57,7 +57,6 @@ export const getStaticPaths: GetStaticPaths = () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params as { id: string };
-
   const { data } = await pokeApi.get<Pokemon>(`/pokemon/${id}`);
 
   return {
