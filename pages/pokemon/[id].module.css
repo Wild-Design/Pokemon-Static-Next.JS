@@ -1,0 +1,11 @@
+.container {
+  min-width: 100%;
+  padding: 20px;
+}
+
+.cardsContainer {
+  display: flex;
+  width: 100%;
+}
+
+

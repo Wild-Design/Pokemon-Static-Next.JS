@@ -1,0 +1,15 @@
+/* .cardsContainer {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-items: center;
+  gap: 20px;
+} */
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+}
