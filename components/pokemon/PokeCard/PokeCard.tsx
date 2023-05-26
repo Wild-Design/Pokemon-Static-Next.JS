@@ -9,7 +9,7 @@ interface Props {
 const PokeCard: FC<Props> = ({ pokemon }) => {
   const router = useRouter();
   const pokeNavigate = () => {
-    router.push(`/pokemon/${pokemon.id}`);
+    router.push(`/name/${pokemon.name}`);
   };
 
   return (

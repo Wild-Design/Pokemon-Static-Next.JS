@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 150px);
+}
+
+.container h2 {
+  font-size: 35px;
+  color: rgb(228, 228, 228);
+}
+.container img {
+  margin-top: 40px;
+  opacity: 0.2;
+}

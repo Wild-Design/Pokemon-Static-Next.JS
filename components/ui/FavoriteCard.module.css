@@ -1,0 +1,15 @@
+.cardContainer {
+  max-width: 300px;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-color: rgb(29, 29, 29);
+}
+.cardContainer img {
+  min-width: 80%;
+  width: 100%;
+}
