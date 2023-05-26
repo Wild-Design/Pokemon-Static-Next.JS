@@ -24,7 +24,7 @@ export const Layout: FC<{ children: ReactNode; title: string }> = ({
           property='og:description'
           content={`Esta es la página sobre ${title}`}
         />
-        <meta property='og:image' content={`${origin}/img/Gengar.jpg`} />
+        <meta property='og:image' content={`${origin}/img/banner.png`} />
       </Head>
       <NavBar />
       <main>{children}</main>
